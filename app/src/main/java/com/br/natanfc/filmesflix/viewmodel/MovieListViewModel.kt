@@ -10,7 +10,7 @@ import com.br.natanfc.filmesflix.repository.MovieRepository
 
 class MovieListViewModel: ViewModel() {
 
-    private val movieRestApiTask = MovieRestApiTask
+    private val movieRestApiTask = MovieRestApiTask()
     private val movieRepository = MovieRepository(movieRestApiTask)
 
     companion object {
